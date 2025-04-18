@@ -14,7 +14,6 @@ const AboutUs = () => {
       {/* === ABOUT US SECTION === */}
       <section id="about" className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
           {/* Left: Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -40,10 +39,20 @@ const AboutUs = () => {
               About <span className="text-red-600">SX Factor</span>
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed text-justify">
-              SX Factor Sdn Bhd is a strategic venture builder and execution partner dedicated to bringing transformative ideas to life.
-              <br /><br />
-              We work closely with visionary teams, organizations, and institutions to develop bold, purposeful initiatives that shape the future.
-              Our hands-on approach, business acumen, and commitment to excellence make us a catalyst for meaningful change.
+              SX Factor Sdn Bhd is a business advisory and consultancy firm that
+              helps companies grow, solve problems, and reach their goals. We
+              support businesses at every stage — from setting up operations to
+              managing finances, securing funding, and improving performance.
+              <br />
+              <br />
+              We don’t just give advice — we work closely with our clients as
+              partners. Our team brings real-world experience in finance,
+              strategy, and operations to deliver practical solutions that make
+              a difference. Over the years, we’ve worked with startups, SMEs,
+              and large companies across different industries. Whether it's
+              handling accounting and tax, raising capital, or advising on big
+              decisions, we’re known for being hands-on, reliable, and
+              results-driven.
             </p>
 
             <div className="mt-8">
@@ -59,7 +68,10 @@ const AboutUs = () => {
       </section>
 
       {/* === OUR HISTORY SECTION === */}
-      <section id="history" className="relative bg-black text-white py-20 overflow-hidden z-10">
+      <section
+        id="history"
+        className="relative bg-black text-white py-20 overflow-hidden z-10"
+      >
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-extrabold text-white">
@@ -72,7 +84,6 @@ const AboutUs = () => {
 
           {/* Flex container for timeline and image */}
           <div className="flex flex-col md:flex-row items-center md:space-x-16 space-y-12 md:space-y-0">
-
             {/* Timeline on the left */}
             <motion.div
               className="flex-1"
@@ -83,23 +94,56 @@ const AboutUs = () => {
             >
               <div className="border-l-4 border-red-600 pl-8 space-y-12">
                 <div>
-                  <h3 className="text-2xl font-semibold text-white">Founded in 2018</h3>
+                  <h3 className="text-2xl font-semibold text-white">
+                    Founded in 2017
+                  </h3>
                   <p className="text-gray-400 mt-2 leading-relaxed">
-                    SX Factor began with a vision to challenge traditional business models by focusing on execution-first strategy.
+                    Originally operating in the Food & Beverage (F&B) industry.
+                    With a passion for entrepreneurship and a knack for building
+                    sustainable business models, our founders soon recognized a
+                    broader opportunity — to help other businesses grow with the
+                    same level of structure, strategy, and operational
+                    excellence. In 2019, we pivoted into business advisory and
+                    consultancy, marking the beginning of a new chapter. Since
+                    then, SX Factor has grown into a trusted partner for
+                    companies seeking not just guidance, but hands-on support in
+                    navigating their financial and strategic journeys.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-semibold text-white">Strategic Growth (2019–2021)</h3>
+                  <h3 className="text-2xl font-semibold text-white">
+                    Key Milestones ( 2019 - 2022 )
+                  </h3>
                   <p className="text-gray-400 mt-2 leading-relaxed">
-                    During this phase, we established strategic partnerships, expanded our operational capacity, and launched key ventures.
+                    <strong>2021 –</strong> Airdroitech Sdn Bhd (ADT): SX Factor
+                    played a critical role in the setup of Airdroitech Sdn Bhd,
+                    a finance shared services and software provider supporting
+                    Polyaire, one of Australia’s largest air-conditioning
+                    manufacturers. Our involvement went beyond incorporation —
+                    we continue to provide accounting, tax, audit, budgeting,
+                    and business advisory services that support ADT’s ongoing
+                    operations and strategic alignment with Polyaire’s growth.{" "}
+                    <br />
+                    <br />
+                    <strong>2022 –</strong> Vantage Energy Group: Appointed to
+                    provide CFO services for Vantage, SX Factor led initiatives
+                    in fundraising, loan restructuring, project financing, and
+                    overall strategic business advisory. Acting as group CFO, we
+                    were instrumental in helping the business navigate complex
+                    transactions and secure critical infrastructure projects.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-semibold text-white">Future-Driven (2022 & Beyond)</h3>
+                  <h3 className="text-2xl font-semibold text-white">
+                    Future-Driven (2022 & Beyond)
+                  </h3>
                   <p className="text-gray-400 mt-2 leading-relaxed">
-                    With a focus on innovation and impact, we continue to co-create transformative projects across various industries.
+                    Today, our journey from F&B roots to full-scale business
+                    advisory reflects our adaptive mindset and entrepreneurial
+                    DNA. We continue to evolve alongside our clients — building,
+                    transforming, and scaling businesses that are built to last.
                   </p>
                 </div>
               </div>
@@ -126,11 +170,18 @@ const AboutUs = () => {
       {/* === VISION & MISSION SECTION === */}
       <section className="relative bg-black text-white py-20 mt-16 overflow-hidden z-0">
         {/* Background image with blur */}
-        <div className="absolute inset-0 bg-cover bg-center backdrop-blur-lg" style={{ backgroundImage: `url(${Swirl})`,backgroundColor: 'rgba(0, 0, 0, 0.8)' }}></div>
+        <div
+          className="absolute inset-0 bg-cover bg-center backdrop-blur-lg"
+          style={{
+            backgroundImage: `url(${Swirl})`,
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+          }}
+        ></div>
 
         <div className="relative max-w-7xl mx-auto px-6 z-10">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center mb-16">
-            Our <span className="text-red-600">Vision</span> & <span className="text-red-600">Mission</span>
+            Our <span className="text-red-600">Vision</span> &{" "}
+            <span className="text-red-600">Mission</span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-stretch">
@@ -150,7 +201,12 @@ const AboutUs = () => {
                   <h3 className="text-2xl font-semibold">Our Vision</h3>
                 </div>
                 <p className="text-gray-800 text-justify leading-relaxed">
-                  To be a driving force behind innovative and high-impact initiatives that shape industries and improve lives. We envision a future where strategic thinking, purposeful collaboration, and bold execution come together to create lasting impact through smart execution and strategic alignment.
+                  To be a driving force behind innovative and high-impact
+                  initiatives that shape industries and improve lives. We
+                  envision a future where strategic thinking, purposeful
+                  collaboration, and bold execution come together to create
+                  lasting impact through smart execution and strategic
+                  alignment.
                 </p>
               </div>
             </motion.div>
@@ -171,9 +227,18 @@ const AboutUs = () => {
                   <h3 className="text-2xl font-semibold">Our Mission</h3>
                 </div>
                 <p className="text-white text-justify leading-relaxed">
-                  SX Factor exists to enable and empower strategic ventures by acting as a hands-on partner in ideation, development, and execution. We collaborate with like-minded organizations and institutions to co-create businesses, infrastructure, and solutions that address real-world needs and unlock new opportunities.
-                  <br /><br />
-                  Through a blend of strategic foresight, operational excellence, and a deep understanding of market dynamics, we bring together people, capital, and ideas to build what’s up next.
+                  SX Factor exists to enable and empower strategic ventures by
+                  acting as a hands-on partner in ideation, development, and
+                  execution. We collaborate with like-minded organizations and
+                  institutions to co-create businesses, infrastructure, and
+                  solutions that address real-world needs and unlock new
+                  opportunities.
+                  <br />
+                  <br />
+                  Through a blend of strategic foresight, operational
+                  excellence, and a deep understanding of market dynamics, we
+                  bring together people, capital, and ideas to build what’s up
+                  next.
                 </p>
               </div>
             </motion.div>
