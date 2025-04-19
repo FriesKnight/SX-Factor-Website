@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Discuss from "../assets/discuss.avif";
 import buildingImg from "../assets/building.avif";
 import { Eye, Target } from "lucide-react";
-import Swirl from "../assets/swirl.avif";
+import White from "../assets/whitey.avif";
 
 const AboutUs = () => {
   return (
@@ -14,7 +14,7 @@ const AboutUs = () => {
 
       {/* === ABOUT US SECTION === */}
       <section id="about" className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-3 grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -36,10 +36,10 @@ const AboutUs = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-6 font-merriweather">
               About <span className="text-red-600">SX Factor</span>
             </h2>
-            <p className="text-gray-700 text-lg leading-relaxed text-justify">
+            <p className="text-black text-lg leading-relaxed text-justify font-semibold">
               SX Factor Sdn Bhd is a business advisory and consultancy firm that
               helps companies grow, solve problems, and reach their goals. We
               support businesses at every stage — from setting up operations to
@@ -75,10 +75,10 @@ const AboutUs = () => {
       >
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white">
-              Our <span className="text-red-600">History</span>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white font-merriweather">
+              Our <span className="text-red-600 font-merriweather">History</span>
             </h2>
-            <p className="text-lg text-gray-300 mt-4 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 mt-4 max-w-3xl mx-auto font-lato">
               A journey marked by purpose, growth, and bold ventures.
             </p>
           </div>
@@ -98,7 +98,7 @@ const AboutUs = () => {
                   <h3 className="text-2xl font-semibold text-white">
                     Founded in 2017
                   </h3>
-                  <p className="text-gray-400 mt-2 leading-relaxed">
+                  <p className="text-gray-400 mt-2 leading-relaxed text-justify">
                     Originally operating in the Food & Beverage (F&B) industry.
                     With a passion for entrepreneurship and a knack for building
                     sustainable business models, our founders soon recognized a
@@ -116,7 +116,7 @@ const AboutUs = () => {
                   <h3 className="text-2xl font-semibold text-white">
                     Key Milestones ( 2019 - 2022 )
                   </h3>
-                  <p className="text-gray-400 mt-2 leading-relaxed">
+                  <p className="text-gray-400 mt-2 leading-relaxed text-justify">
                     <strong>2021 –</strong> Airdroitech Sdn Bhd (ADT): SX Factor
                     played a critical role in the setup of Airdroitech Sdn Bhd,
                     a finance shared services and software provider supporting
@@ -140,7 +140,7 @@ const AboutUs = () => {
                   <h3 className="text-2xl font-semibold text-white">
                     Future-Driven (2022 & Beyond)
                   </h3>
-                  <p className="text-gray-400 mt-2 leading-relaxed">
+                  <p className="text-gray-400 mt-2 leading-relaxed text-justify">
                     Today, our journey from F&B roots to full-scale business
                     advisory reflects our adaptive mindset and entrepreneurial
                     DNA. We continue to evolve alongside our clients — building,
@@ -169,79 +169,56 @@ const AboutUs = () => {
       </section>
 
       {/* === VISION & MISSION SECTION === */}
-      <section className="relative bg-black text-white py-20 mt-16 overflow-hidden z-0">
-        {/* Background image with blur */}
-        <div
-          className="absolute inset-0 bg-cover bg-center backdrop-blur-lg"
-          style={{
-            backgroundImage: `url(${Swirl})`,
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-          }}
-        ></div>
+      <section
+        id="vision"
+        className="relative py-24 px-6 bg-cover bg-center"
+        style={{ backgroundImage: `url(${White}` }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 backdrop-blur-sm z-0" />
 
-        <div className="relative max-w-7xl mx-auto px-6 z-10">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center mb-16">
-            Our <span className="text-red-600">Vision</span> &{" "}
-            <span className="text-red-600">Mission</span>
+        <div className="relative z-10 max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-center text-black mb-20 font-merriweather">
+            Our <span className="text-red-600">Vision</span> & <span className="text-red-600">Mission</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12 items-stretch">
-            {/* Vision Card */}
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+            {/* Vision */}
             <motion.div
-              className="bg-white text-black rounded-2xl shadow-xl p-8 flex flex-col justify-between hover:shadow-2xl transition duration-300"
-              initial={{ opacity: 0, y: 50 }}
+              className="h-full group bg-white/70 backdrop-blur-md border border-gray-200 rounded-3xl p-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true }}
             >
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">
-                    V
-                  </div>
-                  <h3 className="text-2xl font-semibold">Our Vision</h3>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-red-100 text-red-600 p-3 rounded-xl">
+                  <Eye className="w-6 h-6" />
                 </div>
-                <p className="text-gray-800 text-justify leading-relaxed">
-                  To be a driving force behind innovative and high-impact
-                  initiatives that shape industries and improve lives. We
-                  envision a future where strategic thinking, purposeful
-                  collaboration, and bold execution come together to create
-                  lasting impact through smart execution and strategic
-                  alignment.
-                </p>
+                <h3 className="text-2xl font-semibold text-black">Vision</h3>
               </div>
+              <p className="text-gray-700 leading-relaxed text-base">
+                To lead bold and transformative initiatives that shape industries and elevate lives, powered by strategy, innovation, and impactful collaboration.
+              </p>
             </motion.div>
 
-            {/* Mission Card */}
+            {/* Mission */}
             <motion.div
-              className="bg-red-600 text-white rounded-2xl shadow-xl p-8 flex flex-col justify-between hover:shadow-2xl transition duration-300"
-              initial={{ opacity: 0, y: 50 }}
+              className="h-full group bg-white/70 backdrop-blur-md border border-gray-200 rounded-3xl p-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-red-600 font-bold">
-                    M
-                  </div>
-                  <h3 className="text-2xl font-semibold">Our Mission</h3>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-red-100 text-red-600 p-3 rounded-xl">
+                  <Target className="w-6 h-6" />
                 </div>
-                <p className="text-white text-justify leading-relaxed">
-                  SX Factor exists to enable and empower strategic ventures by
-                  acting as a hands-on partner in ideation, development, and
-                  execution. We collaborate with like-minded organizations and
-                  institutions to co-create businesses, infrastructure, and
-                  solutions that address real-world needs and unlock new
-                  opportunities.
-                  <br />
-                  <br />
-                  Through a blend of strategic foresight, operational
-                  excellence, and a deep understanding of market dynamics, we
-                  bring together people, capital, and ideas to build what’s up
-                  next.
-                </p>
+                <h3 className="text-2xl font-semibold text-black">Mission</h3>
               </div>
+              <p className="text-gray-700 leading-relaxed text-base">
+                To empower strategic ventures with execution-first partnership — collaborating with like-minded organizations to co-create real-world impact through bold ideas, market intelligence, and operational excellence.
+              </p>
             </motion.div>
           </div>
         </div>
