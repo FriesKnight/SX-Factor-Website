@@ -25,11 +25,11 @@ const AboutUsHero = () => {
         viewport={{ once: true, amount: 0.5 }}
       >
         {/* SX Factor Sdn Bhd with metallic gradient text */}
-        <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-gray-600 to-white hover:bg-gradient-to-r hover:from-white hover:via-gray-600 hover:to-red-600 transition-all duration-300 drop-shadow-lg">
+        <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-gray-600 to-red-600 bg-[length:200%_100%] bg-left hover:bg-right transition-all duration-[2000ms] ease-in-out drop-shadow-lg font-merriweather">
           SX Factor Sdn Bhd
         </h1>
 
-        <p className="mt-6 text-xl md:text-2xl text-white max-w-3xl leading-relaxed drop-shadow-md">
+        <p className="mt-6 text-xl md:text-2xl text-white max-w-3xl leading-relaxed drop-shadow-md font-lato">
           Your partner in business growth and success — offering hands-on
           support in strategy, finance, and operations.
         </p>

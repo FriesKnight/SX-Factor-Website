@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap");
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -47,7 +48,7 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 5em !important;
   line-height: 1.1;
 }
 

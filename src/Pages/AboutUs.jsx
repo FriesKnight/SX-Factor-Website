@@ -14,7 +14,7 @@ const AboutUs = () => {
 
       {/* === ABOUT US SECTION === */}
       <section id="about" className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-3 grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -36,10 +36,10 @@ const AboutUs = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-6">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-6 font-merriweather">
               About <span className="text-red-600">SX Factor</span>
             </h2>
-            <p className="text-gray-700 text-lg leading-relaxed text-justify">
+            <p className="text-black text-lg leading-relaxed text-justify font-semibold">
               SX Factor Sdn Bhd is a business advisory and consultancy firm that
               helps companies grow, solve problems, and reach their goals. We
               support businesses at every stage — from setting up operations to
@@ -75,10 +75,10 @@ const AboutUs = () => {
       >
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white">
-              Our <span className="text-red-600">History</span>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white font-merriweather">
+              Our <span className="text-red-600 font-merriweather">History</span>
             </h2>
-            <p className="text-lg text-gray-300 mt-4 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 mt-4 max-w-3xl mx-auto font-lato">
               A journey marked by purpose, growth, and bold ventures.
             </p>
           </div>
