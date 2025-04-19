@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Leader1 from "../assets/Faizal_RL.jpg";
 import Leader2 from "../assets/Nina_RL.jpg";
 import Header from "../components/Header"; // Import the Header component
+import HeadLeader from "../assets/Head_Leader.jpg";
 
 const leadersData = [
   {
@@ -43,9 +44,9 @@ const Leaders = () => {
     <div className="min-h-screen bg-black text-white">
       {/* Use the Header component */}
       <Header
-        imageSrc="../assets/Head_Leader.jpg"  // Pass the header background image for the Leaders page
+         imageSrc={HeadLeader} // Pass the header background image for the Leaders page
         title="Meet Our Leaders"             // Title for the Leaders page
-        subtitle="Our leadership team is dedicated to making a difference." // Optional subtitle
+        subtitle="Leadership that delivers. Vision that inspires." // Optional subtitle
       />
 
       <div className="pt-16 px-6 lg:px-20">
@@ -84,11 +85,11 @@ const Leaders = () => {
           <AnimatePresence>
             {selectedLeader && (
               <motion.div
-                className="fixed inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-6 z-50 overflow-y-auto"
+                className="fixed inset-0 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center p-6 z-50 overflow-y-auto"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-              >
+              >   
                 <motion.img
                   src={selectedLeader.image}
                   alt={selectedLeader.name}
@@ -128,7 +129,7 @@ const Leaders = () => {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                 >
-                  Back to Leaders
+                  Back
                 </motion.button>
               </motion.div>
             )}
