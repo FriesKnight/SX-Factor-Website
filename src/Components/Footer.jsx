@@ -8,18 +8,19 @@ const Footer = () => {
       {/* Top Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-sm md:text-base">
         {/* Left: About + Logo */}
-        <div>
+        <div className="text-center md:text-left">
           <h3 className="text-xl font-bold mb-3 text-red-600">About Us</h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-gray-400 mb-4 text-justify leading-relaxed">
             SX Factor is a strategic business advisory firm built by experienced
-            industry leaders to drive clarity, confidence, and commercial
-            growth.
+            industry leaders to drive clarity, confidence, and commercial growth.
           </p>
-          <img src={Logo} alt="SX Factor Logo" className="h-10 mt-2" />
+          <div className="flex justify-center md:justify-start">
+            <img src={Logo} alt="SX Factor Logo" className="h-10 w-auto" />
+          </div>
         </div>
 
         {/* Center: Quick Links */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left pl-14">
           <h3 className="text-xl font-bold mb-3 text-red-600">Quick Links</h3>
           <ul className="space-y-2">
             <li>
@@ -28,26 +29,17 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/about-us"
-                className="hover:underline hover:text-red-500"
-              >
+              <Link to="/about-us" className="hover:underline hover:text-red-500">
                 About Us
               </Link>
             </li>
             <li>
-              <Link
-                to="/leaders"
-                className="hover:underline hover:text-red-500"
-              >
+              <Link to="/leaders" className="hover:underline hover:text-red-500">
                 Our Leaders
               </Link>
             </li>
             <li>
-              <Link
-                to="/contact"
-                className="hover:underline hover:text-red-500"
-              >
+              <Link to="/contact" className="hover:underline hover:text-red-500">
                 Contact Us
               </Link>
             </li>
@@ -55,7 +47,7 @@ const Footer = () => {
         </div>
 
         {/* Right: Contact Info */}
-        <div className="text-left md:text-right">
+        <div className="text-center md:text-right">
           <h3 className="text-xl font-bold mb-3 text-red-600">Contact</h3>
           <ul className="space-y-2 text-gray-400">
             <li>
