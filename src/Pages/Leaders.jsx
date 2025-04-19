@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Footer from "../components/Footer";
-import Leader1 from "../assets/Faizal_Sample.png"; // Make sure this image exists
+import Leader1 from "../assets/Faizal_RL.jpg";
+import Leader2 from "../assets/Nina_RL.jpg";
+import Header from "../components/Header"; // Import the Header component
 
 const leadersData = [
   {
@@ -29,44 +32,110 @@ Faizal holds a BSc in Accounting (Rutgers), an MBA (Ohio University), and a Grad
 At SX Factor, she plays a pivotal role in business advisory services, shaping the firm's strategic direction and expanding its portfolio. At Airdroitech, she oversees operations and strategy, supporting finance shared services and software solutions.
 
 Shamina is known for her hands-on leadership style, commitment to continuous improvement, and ability to build collaborative, high-performing teams. She champions structured, scalable solutions and fosters a culture of excellence and innovation.`,
-    image: "https://via.placeholder.com/150",
+    image: Leader2,
   },
 ];
 
 const Leaders = () => {
+  const [selectedLeader, setSelectedLeader] = useState(null);
+
   return (
-    <div className="min-h-screen bg-black text-white pt-28 px-6 lg:px-20">
-      <h2 className="text-4xl md:text-5xl text-center mb-12 font-extrabold">
-        Our <span className="text-red-600">Leaders</span>
-      </h2>
+    <div className="min-h-screen bg-black text-white">
+      {/* Use the Header component */}
+      <Header
+        imageSrc="../assets/Head_Leader.jpg"  // Pass the header background image for the Leaders page
+        title="Meet Our Leaders"             // Title for the Leaders page
+        subtitle="Our leadership team is dedicated to making a difference." // Optional subtitle
+      />
 
-      <div className="grid gap-10 md:grid-cols-2">
-        {leadersData.map((leader, index) => (
-          <div
-            key={index}
-            className="bg-white text-black rounded-xl shadow-md hover:shadow-red-600 hover:shadow-lg transition-transform duration-300 transform hover:scale-105 p-8 flex flex-col items-center text-center"
-          >
-            {/* Profile Image */}
-            <img
-              src={leader.image}
-              alt={leader.name}
-              className="w-40 h-40 object-cover rounded-full border-4 border-red-600 mb-6 shadow-md"
-            />
+      <div className="pt-16 px-6 lg:px-20">
+        <div className="relative">
+          {/* Initial Leader Grid */}
+          <AnimatePresence>
+            {!selectedLeader && (
+              <motion.div
+                className="grid gap-10 md:grid-cols-2 border-2 border-black bg-white p-8 rounded-xl"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                {leadersData.map((leader, index) => (
+                  <motion.div
+                    key={index}
+                    className="cursor-pointer flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-md hover:scale-105 transition"
+                    whileHover={{ scale: 1.05 }}
+                    onClick={() => setSelectedLeader(leader)}
+                  >
+                    <img
+                      src={leader.image}
+                      alt={leader.name}
+                      className="w-40 h-40 object-cover rounded-xl mb-4 shadow-md"
+                    />
+                    <h2 className="text-xl font-semibold text-black">
+                      {leader.name}
+                    </h2>
+                  </motion.div>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
 
-            {/* Name & Title */}
-            <h2 className="text-2xl font-bold">{leader.name}</h2>
-            <p className="text-red-600 text-base font-semibold mt-1 mb-4">
-              {leader.title}
-            </p>
+          {/* Expanded Leader Detail */}
+          <AnimatePresence>
+            {selectedLeader && (
+              <motion.div
+                className="fixed inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-6 z-50 overflow-y-auto"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                <motion.img
+                  src={selectedLeader.image}
+                  alt={selectedLeader.name}
+                  className="w-52 h-52 object-cover rounded-xl mb-6 shadow-xl"
+                  initial={{ scale: 0.8 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: "spring", stiffness: 100 }}
+                />
 
-            {/* Full Bio */}
-            <p className="text-gray-700 text-sm leading-relaxed text-justify whitespace-pre-line max-h-[500px] overflow-y-auto px-1">
-              {leader.bio}
-            </p>
-          </div>
-        ))}
+                <motion.h2
+                  className="text-3xl font-bold text-center"
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                >
+                  {selectedLeader.name}
+                </motion.h2>
+
+                <motion.p
+                  className="text-red-500 text-lg font-semibold mt-2 mb-4 text-center"
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                >
+                  {selectedLeader.title}
+                </motion.p>
+
+                <motion.p
+                  className="max-w-4xl text-sm text-gray-300 text-justify whitespace-pre-line overflow-y-auto max-h-[60vh] px-4 leading-relaxed"
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                >
+                  {selectedLeader.bio}
+                </motion.p>
+
+                <motion.button
+                  className="mt-8 px-6 py-2 border border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition rounded"
+                  onClick={() => setSelectedLeader(null)}
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                >
+                  Back to Leaders
+                </motion.button>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
-      {/* Footer */}
+
       <Footer />
     </div>
   );
