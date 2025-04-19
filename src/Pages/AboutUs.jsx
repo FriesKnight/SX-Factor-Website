@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AboutUsHero from "../Components/AboutUsHero";
+import Footer from "../components/Footer";
 import Discuss from "../assets/discuss.avif";
 import buildingImg from "../assets/building.avif";
 import { Eye, Target } from "lucide-react";
@@ -245,6 +246,8 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
