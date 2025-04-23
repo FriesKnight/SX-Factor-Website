@@ -185,7 +185,7 @@ const AboutUs = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-stretch">
             {/* Vision */}
             <motion.div
-              className="h-full group bg-white/70 backdrop-blur-md border border-gray-200 rounded-3xl p-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
+              className="h-full group bg-white/70 backdrop-blur-md border border-gray-200 rounded-3xl p-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col border-black"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -204,7 +204,7 @@ const AboutUs = () => {
 
             {/* Mission */}
             <motion.div
-              className="h-full group bg-white/70 backdrop-blur-md border border-gray-200 rounded-3xl p-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
+              className="h-full group bg-white/70 backdrop-blur-md border border-gray-200 rounded-3xl p-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col border-black"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
