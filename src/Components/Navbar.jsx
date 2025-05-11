@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-white w-full shadow-md px-6 fixed top-0 left-0 z-50 h-16 flex items-center justify-between">
+    <div className="navbar bg-white w-full shadow-md px-6 fixed top-0 left-0 z-50 h-20 flex items-center justify-between">
       {/* Left Logo */}
       <div className="flex-none">
         <Link
@@ -28,7 +28,7 @@ const Navbar = () => {
           className="text-2xl font-bold text-black hover:text-red-600"
           onClick={() => handleLinkClick("/")}
         >
-          SX Company
+          SX Factor
         </Link>
       </div>
 
@@ -38,11 +38,10 @@ const Navbar = () => {
           <li>
             <Link
               to="/"
-              className={`relative text-base font-semibold transition duration-300 ${
-                activeLink === "/"
+              className={`relative text-base font-semibold transition duration-300 ${activeLink === "/"
                   ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
                   : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
-              }`}
+                }`}
               onClick={() => handleLinkClick("/")}
             >
               Home
@@ -51,11 +50,10 @@ const Navbar = () => {
           <li>
             <Link
               to="/about-us"
-              className={`relative text-base font-semibold transition duration-300 ${
-                activeLink === "/about-us"
+              className={`relative text-base font-semibold transition duration-300 ${activeLink === "/about-us"
                   ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
                   : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
-              }`}
+                }`}
               onClick={() => handleLinkClick("/about-us")}
             >
               About Us
@@ -64,14 +62,25 @@ const Navbar = () => {
           <li>
             <Link
               to="/leaders"
-              className={`relative text-base font-semibold transition duration-300 ${
-                activeLink === "/leaders"
+              className={`relative text-base font-semibold transition duration-300 ${activeLink === "/leaders"
                   ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
                   : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
-              }`}
+                }`}
               onClick={() => handleLinkClick("/leaders")}
             >
               Our Leaders
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/services"
+              className={`relative text-base font-semibold transition duration-300 ${activeLink === "/services"
+                  ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
+                  : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
+                }`}
+              onClick={() => handleLinkClick("/services")}
+            >
+              Services
             </Link>
           </li>
         </ul>
@@ -115,11 +124,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className={`block text-black px-3 py-2 rounded transition ${
-                  activeLink === "/"
+                className={`block text-black px-3 py-2 rounded transition ${activeLink === "/"
                     ? "text-red-600 underline"
                     : "hover:text-black hover:underline"
-                }`}
+                  }`}
                 onClick={() => handleLinkClick("/")}
               >
                 Home
@@ -128,11 +136,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about-us"
-                className={`block text-black px-3 py-2 rounded transition ${
-                  activeLink === "/about-us"
+                className={`block text-black px-3 py-2 rounded transition ${activeLink === "/about-us"
                     ? "text-red-600 underline"
                     : "hover:text-black hover:underline"
-                }`}
+                  }`}
                 onClick={() => handleLinkClick("/about-us")}
               >
                 About Us
@@ -141,11 +148,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/leaders"
-                className={`block text-black px-3 py-2 rounded transition ${
-                  activeLink === "/leaders"
+                className={`block text-black px-3 py-2 rounded transition ${activeLink === "/leaders"
                     ? "text-red-600 underline"
                     : "hover:text-black hover:underline"
-                }`}
+                  }`}
                 onClick={() => handleLinkClick("/leaders")}
               >
                 Our Leaders
@@ -154,11 +160,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/contact"
-                className={`block text-white bg-black px-3 py-2 rounded transition ${
-                  activeLink === "/contact"
+                className={`block text-white bg-black px-3 py-2 rounded transition ${activeLink === "/contact"
                     ? "text-red-600"
                     : "hover:bg-white hover:text-black"
-                }`}
+                  }`}
                 onClick={() => handleLinkClick("/contact")}
               >
                 Contact Us
