@@ -39,8 +39,8 @@ const Navbar = () => {
             <Link
               to="/"
               className={`relative text-base font-semibold transition duration-300 ${activeLink === "/"
-                  ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
-                  : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
+                ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
+                : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
                 }`}
               onClick={() => handleLinkClick("/")}
             >
@@ -51,8 +51,8 @@ const Navbar = () => {
             <Link
               to="/about-us"
               className={`relative text-base font-semibold transition duration-300 ${activeLink === "/about-us"
-                  ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
-                  : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
+                ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
+                : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
                 }`}
               onClick={() => handleLinkClick("/about-us")}
             >
@@ -63,8 +63,8 @@ const Navbar = () => {
             <Link
               to="/leaders"
               className={`relative text-base font-semibold transition duration-300 ${activeLink === "/leaders"
-                  ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
-                  : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
+                ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
+                : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
                 }`}
               onClick={() => handleLinkClick("/leaders")}
             >
@@ -75,8 +75,8 @@ const Navbar = () => {
             <Link
               to="/services"
               className={`relative text-base font-semibold transition duration-300 ${activeLink === "/services"
-                  ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
-                  : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
+                ? 'text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black after:content-[""] after:transition-all after:duration-300'
+                : 'text-black hover:text-red-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-red-600 hover:after:content-[""] hover:after:transition-all hover:after:duration-300 hover:after:scale-x-100 after:scale-x-0'
                 }`}
               onClick={() => handleLinkClick("/services")}
             >
@@ -125,8 +125,8 @@ const Navbar = () => {
               <Link
                 to="/"
                 className={`block text-black px-3 py-2 rounded transition ${activeLink === "/"
-                    ? "text-red-600 underline"
-                    : "hover:text-black hover:underline"
+                  ? "text-red-600 underline"
+                  : "hover:text-black hover:underline"
                   }`}
                 onClick={() => handleLinkClick("/")}
               >
@@ -137,8 +137,8 @@ const Navbar = () => {
               <Link
                 to="/about-us"
                 className={`block text-black px-3 py-2 rounded transition ${activeLink === "/about-us"
-                    ? "text-red-600 underline"
-                    : "hover:text-black hover:underline"
+                  ? "text-red-600 underline"
+                  : "hover:text-black hover:underline"
                   }`}
                 onClick={() => handleLinkClick("/about-us")}
               >
@@ -149,8 +149,8 @@ const Navbar = () => {
               <Link
                 to="/leaders"
                 className={`block text-black px-3 py-2 rounded transition ${activeLink === "/leaders"
-                    ? "text-red-600 underline"
-                    : "hover:text-black hover:underline"
+                  ? "text-red-600 underline"
+                  : "hover:text-black hover:underline"
                   }`}
                 onClick={() => handleLinkClick("/leaders")}
               >
@@ -161,8 +161,8 @@ const Navbar = () => {
               <Link
                 to="/contact"
                 className={`block text-white bg-black px-3 py-2 rounded transition ${activeLink === "/contact"
-                    ? "text-red-600"
-                    : "hover:bg-white hover:text-black"
+                  ? "text-red-600"
+                  : "hover:bg-white hover:text-black"
                   }`}
                 onClick={() => handleLinkClick("/contact")}
               >
