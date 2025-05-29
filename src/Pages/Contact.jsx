@@ -35,7 +35,7 @@ function Contact() {
 
             {/* Overlay Content */}
             <div className="relative z-10 text-white">
-              <h2 className="text-7xl font-bold mb-4 font-merriweather pb-5">Get in Touch</h2>
+              <h2 className="text-7xl font-bold mb-4 font-poppins pb-5">Get in Touch</h2>
               <p className="mb-6 text-white/80">
                 Have a question or just want to say hi? Fill in the form and we’ll get back to you as soon as we can.
               </p>

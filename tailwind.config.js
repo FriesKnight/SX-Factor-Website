@@ -8,7 +8,12 @@ export default {
     extend: {
       fontFamily: {
         lato: ["Lato", "sans-serif"],
-        merriweather: ["Merriweather", "serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      colors: {
+        "dark-red": "#b91c1c",
+        "darker-red": "#7f1d1d",
+        "neu-bg": "#f8f8f8",
       },
     },
   },

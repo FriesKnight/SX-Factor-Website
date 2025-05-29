@@ -36,7 +36,7 @@ const AboutUs = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-6 font-merriweather">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-6 font-poppins">
               About <span className="text-red-600">SX Factor</span>
             </h2>
             <p className="text-black text-lg leading-relaxed text-justify font-semibold">
@@ -75,8 +75,8 @@ const AboutUs = () => {
       >
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white font-merriweather">
-              Our <span className="text-red-600 font-merriweather">History</span>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white font-poppins">
+              Our <span className="text-red-600 font-poppins">History</span>
             </h2>
             <p className="text-lg text-gray-300 mt-4 max-w-3xl mx-auto font-lato">
               A journey marked by purpose, growth, and bold ventures.
@@ -178,7 +178,7 @@ const AboutUs = () => {
         <div className="absolute inset-0 backdrop-blur-sm z-0" />
 
         <div className="relative z-10 max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-center text-black mb-20 font-merriweather">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-center text-black mb-20 font-poppins">
             Our <span className="text-red-600">Vision</span> & <span className="text-red-600">Mission</span>
           </h2>
 

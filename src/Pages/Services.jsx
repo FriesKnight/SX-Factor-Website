@@ -39,8 +39,8 @@ const Services = () => {
     return (
         <div className="relative text-white min-h-screen font-serif overflow-hidden">
             {/* Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-black via-zinc-900 to-black z-0" />
-            <div className="absolute inset-0 bg-[radial-gradient(#1f1f1f_1px,transparent_1px)] [background-size:20px_20px] opacity-10 z-0" />
+            <div className="absolute inset-0 bg-gradient-to-br from-black via-zinc-900 to-gray-800 z-0" />
+            {/* <div className="absolute inset-0 bg-[radial-gradient(#1f1f1f_1px,transparent_1px)] [background-size:20px_20px] opacity-10 z-0" /> */}
 
             {/* Content */}
             <div className="relative z-10">
@@ -53,10 +53,10 @@ const Services = () => {
                 <section className="py-24 px-6 lg:px-28 space-y-24">
                     {/* Section Header */}
                     <div className="max-w-4xl mx-auto text-center space-y-6">
-                        <h2 className="text-5xl font-bold tracking-tight text-red-500">
+                        <h2 className="text-5xl font-bold font-poppins tracking-tight text-red-500">
                             What We Offer
                         </h2>
-                        <p className="text-xl text-gray-300 leading-relaxed font-lato">
+                        <p className="text-xl text-white leading-relaxed font-lato">
                             At SX, we help businesses operate smarter and grow stronger.
                             With a focus on finance, strategy, and people, we offer practical
                             solutions tailored to your needs.
@@ -67,7 +67,7 @@ const Services = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="bg-white/5 border border-gray-700 rounded-2xl p-8 transition-all duration-300 backdrop-blur-md shadow-[0_0_25px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(255,0,0,0.2)]"
+                            className="bg-gradient-to-r from-gray-800 to-black backdrop-blur-sm rounded-xl p-8 shadow-xl transition-transform duration-500 hover:scale-[1.02] hover:shadow-2xl font-poppins"
                         >
                             <div
                                 className={`flex flex-col md:flex-row ${index % 2 !== 0 ? "md:flex-row-reverse" : ""

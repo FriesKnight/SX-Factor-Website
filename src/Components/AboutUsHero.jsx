@@ -25,7 +25,7 @@ const AboutUsHero = () => {
         viewport={{ once: true, amount: 0.5 }}
       >
         {/* SX Factor Sdn Bhd with metallic gradient text */}
-        <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-gray-600 to-red-600 bg-[length:200%_100%] bg-left hover:bg-right transition-all duration-[2000ms] ease-in-out drop-shadow-lg font-merriweather">
+        <h1 className="text-5xl md:text-7xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-gray-600 to-red-600 bg-[length:200%_100%] bg-left hover:bg-right transition-all duration-[2000ms] ease-in-out drop-shadow-lg font-poppins">
           SX Factor Sdn Bhd
         </h1>
 

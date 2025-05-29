@@ -84,7 +84,7 @@ const Leaders = () => {
   };
 
   return (
-    <div className="bg-white text-black min-h-screen">
+    <div className="bg-gradient-to-br from-black via-zinc-900 to-gray-800 z-0 min-h-screen">
       <Header
         imageSrc={HeadLeader}
         title="Meet Our Leaders"
@@ -95,7 +95,7 @@ const Leaders = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Fade-in animation for the quote */}
           <motion.p
-            className="text-xl text-black italic"
+            className="text-xl text-white italic"
             initial={{ opacity: 0 }}
             animate={{ opacity: quoteVisible ? 1 : 0 }}
             transition={{ duration: 2 }}

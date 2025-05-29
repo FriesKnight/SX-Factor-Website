@@ -6,23 +6,24 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white px-6 lg:px-20 py-10 mt-16">
       {/* Top Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-sm md:text-base">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-sm md:text-base text-center md:text-left items-center">
         {/* Left: About + Logo */}
-        <div className="text-center md:text-left">
-          <h3 className="text-xl font-bold mb-3 text-red-600">About Us</h3>
-          <p className="text-gray-400 mb-4 text-justify leading-relaxed">
+        <div>
+          <h3 className="text-xl font-bold mb-3 text-red-600 font-poppins">About Us</h3>
+          <p className="text-gray-400 mb-4 text-justify leading-relaxed font-lato">
             SX Factor is a strategic business advisory firm built by experienced
             industry leaders to drive clarity, confidence, and commercial growth.
           </p>
           <div className="flex justify-center md:justify-start">
-            <img src={Logo} alt="SX Factor Logo" className="h-10 w-auto" />
+            {/* <img src={Logo} alt="SX Factor Logo" className="h-10 w-auto" /> */}
+            <p className="text-2xl font-bold text-red-600 font-poppins">SX Factor</p>
           </div>
         </div>
 
         {/* Center: Quick Links */}
-        <div className="text-center md:text-left pl-14">
-          <h3 className="text-xl font-bold mb-3 text-red-600">Quick Links</h3>
-          <ul className="space-y-2">
+        <div className="pl-0 md:pl-14">
+          <h3 className="text-xl font-bold mb-3 text-red-600 font-poppins">Quick Links</h3>
+          <ul className="space-y-2 font-poppins">
             <li>
               <Link to="/" className="hover:underline hover:text-red-500">
                 Home
@@ -47,7 +48,7 @@ const Footer = () => {
         </div>
 
         {/* Right: Contact Info */}
-        <div className="text-center md:text-right">
+        <div className="md:text-right font-poppins">
           <h3 className="text-xl font-bold mb-3 text-red-600">Contact</h3>
           <ul className="space-y-2 text-gray-400">
             <li>
@@ -69,7 +70,6 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-
       {/* Bottom Section: Copyright */}
       <div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} SX Factor. All rights reserved.
