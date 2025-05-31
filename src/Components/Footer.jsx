@@ -54,18 +54,18 @@ const Footer = () => {
             <li>
               Email:{" "}
               <a
-                href="mailto:info@sxfactor.com"
+                href="mailto:talktous@sx-factor.com"
                 className="hover:underline text-white"
               >
-                info@sxfactor.com
+                talktous@sx-factor.com
               </a>
             </li>
-            <li>
+            {/* <li>
               Phone:{" "}
               <a href="tel:+60312345678" className="hover:underline text-white">
                 +60 3-1234 5678
               </a>
-            </li>
+            </li> */}
             <li>Location: Kuala Lumpur, Malaysia</li>
           </ul>
         </div>
