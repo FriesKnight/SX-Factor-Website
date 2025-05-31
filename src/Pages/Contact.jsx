@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../Components/Footer";
+import Footer from "../Components/Footer.jsx";
 import Navbar from "../Components/Navbar";
 import Header from "../Components/Header";
 import ContactImage from "../assets/Head_Contact.jpg"; // Make sure the path is correct

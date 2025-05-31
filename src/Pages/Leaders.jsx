@@ -3,7 +3,7 @@ import { motion } from "framer-motion"; // Import framer-motion for animations
 import Leader1 from "../assets/Faizal_RL.jpg";
 import Leader2 from "../assets/Nina_RL.jpg";
 import Header from "../Components/Header";
-import Footer from "../Components/Footer";
+import Footer from "../Components/Footer.jsx";
 import HeadLeader from "../assets/leader1.jpg";
 
 const leadersData = [
