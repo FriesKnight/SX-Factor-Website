@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Components/Footer.jsx";
-import Navbar from "../Components/Navbar";
-import Header from "../Components/Header";
+import Navbar from "../Components/Navbar.jsx";
+import Header from "../Components/Header.jsx";
 import ContactImage from "../assets/Head_Contact.jpg"; // Make sure the path is correct
 import Laptop from "../assets/laptop.jpg";
 import Building from "../assets/building2.jpeg";

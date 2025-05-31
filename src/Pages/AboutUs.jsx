@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import AboutUsHero from "../Components/AboutUsHero";
+import AboutUsHero from "../Components/AboutUsHero.jsx";
 import Footer from "../Components/Footer.jsx";
 import Discuss from "../assets/discuss.avif";
 import buildingImg from "../assets/building.avif";
